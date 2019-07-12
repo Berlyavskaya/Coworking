@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Workadium</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <a class="logo">
-            <img src="" class="logo__img" alt="Логотип. Коворкинг твоей мечты">
-          </a>
-          <div class="contacts">
-            <a href="tel^+78000039210" class="contacts__phone"> 8(800)00-392-10
+      <div class="container-header">
+        <header class="header">          
+            <a class="logo">
+              <img src="/img/logo.svg" class="logo__img" width="99px" height="51px" alt="Логотип. Коворкинг твоей мечты - Воркадиум">
             </a>
-            <div class="contacts__schedule">График работы
+            <div class="contacts">
+              <a href="tel^+78000039210" class="contacts__phone"> 8(800)00-392-10
+              </a>
+              <p class="contacts__schedule">График работы
+              </p>
+              <ul class="contacts__opening-hours">
+                <li>пн-вс: 09:00-20:00</li>
+                <li>обед: 14:00-14:30</li>
+              </ul>
             </div>
-            <ul class="contacts__opening-hours">
-              <li>пн-вс: 09:00-20:00</li>
-              <li>обед: 14:00-14:30</li>
-            </ul>
-          </div>
-          <img src="" class="header-picture" alt="Коворкинг твоей мечты">
-        </div>
-      </header>
-      <div class="container">
-        <nav class="menu">
-          <ul class="menu__items">
-            <li>Главная</li>
-            <li>Отзывы</li>
-            <li>Тарифы</li>
-          </ul>
-        </nav>
+          <img src="/img/Banner.png" class="header-banner" alt="Коворкинг твоей мечты - Воркадиум">          
+        </header>
+      </div>  
+      <div class="container-main">       
         <main class="main-content">
-          <!--Скрыть заголовок h1-->
-          <h1>Коворкинг твоей мечты</h1>
+          <nav class="menu">
+            <ul class="menu__items">
+              <li><a href="#">Главная</a></li>
+              <li><a href="comments.html">Отзывы</a></li>
+              <li><a href="price.html">Тарифы</a></li>
+            </ul>
+          </nav>
+            <!--Скрыть заголовок h1-->
+          <h1>Коворкинг твоей мечты </h1>
           <section class="features">
             <h2 class="section-title">Особенности</h2>
-            <div class="feature">
-              <img src="" class="feature__icon" alt="">
-              <h3 class="feature__title">уникальность</h3>
-              <p class="feature__description">Создан для вашего комфортного отдыха</p>
-              <ul class="feature__items">
-                <li>Кофе/чай</li>
-                <li>Шкаф (5 кг)</li>
-                <li>Рабочее место</li>
-              </ul>
-            </div>
-            <div class="feature">
-              <img src="" class="feature__icon" alt="">
-              <h3 class="feature__title">премиум-класс</h3>
-              <p class="feature__desc">Для любителей хороших впечатлений</p>
-              <ul class="feature__items">
-                <li>Обед+кофе</li>
-                <li>Шкаф (10 кг)</li>
-                <li>Детское кресло</li>
-              </ul>
-            </div>
-            <div class="feature">
-              <img src="" class="feature__icon" alt="">
-              <h3 class="feature__title">лакшери-стулья</h3>
-              <p class="feature__description">Всё самое лучшее и незабываемое</p>
-              <ul class="feature__items">
-                <li>Джакузи</li>
-                <li>Шкаф (15 кг)</li>
-                <li>Табуретка</li>
-              </ul>
-            </div>
+            <ul class="features__list">
+              <li class="feature__item">
+                <div class="feature__icon"></div>
+                <h3 class="feature__title">уникальность</h3>
+                <p class="feature__desc">Создан для вашего комфортного отдыха</p>
+                <ul class="feature__items">
+                  <li>Кофе/чай</li>
+                  <li>Шкаф (5 кг)</li>
+                  <li>Рабочее место</li>
+                </ul>
+              </li>  
+              <li class="feature__item"> 
+                <div class="feature__icon"></div>
+                <h3 class="feature__title">премиум-класс</h3>
+                <p class="feature__desc">Для любителей хороших впечатлений</p>
+                <ul class="feature__items">
+                  <li>Обед+кофе</li>
+                  <li>Шкаф (10 кг)</li>
+                  <li>Детское кресло</li>
+                </ul>
+              </li>
+              <li class="feature__item">
+                <div class="feature__icon"></div>
+                <h3 class="feature__title">лакшери-стулья</h3>
+                <p class="feature__desc">Всё самое лучшее и незабываемое</p>
+                <ul class="feature__items">
+                  <li>Джакузи</li>
+                  <li>Шкаф (15 кг)</li>
+                  <li>Табуретка</li>
+                </ul>
+              </li>
+            </ul>
           </section>
           <section class="latest-news">
             <h2 class="section-title">Последние новости</h2>
@@ -124,39 +126,39 @@
           </section>
         </main>
       </div>
-      <footer class="footer">
-        <div class="container">
-          <div class="authorship">
-            <p class="authorship_where">Сделано с любовью и старанием
-              на курсе «HTML + CSS» в <span class="authorship_bold">LoftSchool.</span>
-            </p>
-            <p class="authorship_who">Автор работы: <span class="authorship_bold">Прохладов Вадим.</span></p>
-          </div>
-          <a class="logo">
-            <img src="" class="logo__img" alt="Логотип. Коворкинг твоей мечты">
-          </a>
-          <div class="social-network">
-            <h4 class="social-network_title">Наши социальные сети</h4>
-            <ul class="social-network_list">
-              <li>
-                <a class="social-network_link" href="#" aria-label="Аккаунт коворкинга в Вконтакте"></a>
-              </li>
-              <li>
-                <a class="social-network_link" href="#" aria-label="Аккаунт коворкинга в Facebook"></a>
-              </li>
-              <li>
-                <a class="social-network_link" href="#" aria-label="Аккаунт коворкинга в Google"></a>
-              </li>
-              <li>
-                <a class="social-network_link" href="#" aria-label="Аккаунт коворкинга в Twitter"></a>
-              </li>
-              <li>
-                <a class="social-network_link" href="#" aria-label="Почта"></a>
-              </li>
-            </ul>
-          </div>  
-        </div>
-      </footer>
+      <div class="container-footer">
+        <footer class="footer">        
+            <div class="authorship">
+              <p class="authorship_where">Сделано с любовью и старанием
+                на курсе «HTML + CSS» в <span class="authorship_bold">LoftSchool.</span>
+              </p>
+              <p class="authorship_who">Автор работы: <span class="authorship_bold">Прохладов Вадим.</span></p>
+            </div>
+            <a class="logo">
+              <img src="" class="logo__img" alt="Логотип. Коворкинг твоей мечты">
+            </a>
+            <div class="social-network">
+              <h4 class="social-network_title">Наши социальные сети</h4>
+              <ul class="social-network_list">
+                <li>
+                  <a class="social-network_link" href="#" aria-label="Аккаунт коворкинга Вконтакте"></a>
+                </li>
+                <li>
+                  <a class="social-network_link" href="#" aria-label="Аккаунт коворкинга в Facebook"></a>
+                </li>
+                <li>
+                  <a class="social-network_link" href="#" aria-label="Аккаунт коворкинга в Google"></a>
+                </li>
+                <li>
+                  <a class="social-network_link" href="#" aria-label="Аккаунт коворкинга в Twitter"></a>
+                </li>
+                <li>
+                  <a class="social-network_link" href="#" aria-label="Почта"></a>
+                </li>
+              </ul>
+            </div>         
+        </footer>
+      </div>  
     </div>    
   </body>
 </html>
