@@ -78,6 +78,7 @@ body {
     background-color: #27273e;
     font-family: 'Gotham Pro', Arial, sans-serif;
     color: #ffffff;
+    
   }
   .header, .main-content, .footer {
     width: 1100px;
@@ -92,8 +93,7 @@ body {
     align-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    height: 1430px;
-    background-color: rgba(220, 20, 60, 0.466);
+    height: 1432px;
   }
     
   /*Хедер*/
@@ -112,8 +112,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: stretch;
-    height: 51px;
-    background-color: brown;    
+    height: 51px;    
   }  
   .contacts__phone {
     text-decoration: none;
@@ -134,10 +133,12 @@ body {
     font-style: normal;
     font-stretch: normal;
     letter-spacing: normal;
+    color: #ec1e79;
     text-align: right;
     
   }
   .contacts__opening-hours {
+    visibility: hidden;
     border: 1px solid red;
     z-index: 2;
   }
@@ -145,12 +146,11 @@ body {
     min-width: 1100px;
     min-height: 359px;
     margin-top: -10px;
-    }
+  }
   
   /*Основной контент*/
   /* Прячем звголовок и подсказки скринридера */
-  h1,
-  .page__sr-only {
+  h1, .page__sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -163,7 +163,6 @@ body {
   /* Боковое меню */
   .menu {    
     height: 100%;
-    background-color: rgba(0, 255, 255, 0.589);
     padding-top: 52px;
     width: 198px;    
 }
@@ -173,8 +172,7 @@ body {
     align-items: flex-start;
     list-style: none; 
     margin: 0;
-    padding: 0; 
-    background-color: rgb(214, 212, 91);     
+    padding: 0;  
   }
   .menu__items a {
     position: relative;
@@ -189,7 +187,7 @@ body {
     line-height: 4.1;
     letter-spacing: 1.2px;
     text-align: left;
-    color: #000000;
+    color: #ec1e79;
     margin-left: 15px;
     padding-left: 41px;
     
@@ -203,6 +201,7 @@ body {
     left: 5px;
     height: 15px;
     width: 17px;
+    
   }
   .menu__items .menu__items-comments::before {
     content: "";
@@ -232,7 +231,6 @@ body {
     font-style: normal;
     font-stretch: normal;
     letter-spacing: normal;       
-    background-color: darkcyan;
   }
   .features .section-title {
     margin-top: 57px;    
@@ -243,14 +241,11 @@ body {
     align-items: flex-start;
     max-width: 865px;
     flex-direction: column;
-    
-    background-color: rgba(100, 148, 237, 0.473);
   }
   .features__list {
     display: flex;
     list-style: none;
     margin-left: 22px;
-    background-color: rgba(212, 237, 100, 0.473);
     margin-bottom: 0;
   }
  
@@ -259,13 +254,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid green;   
    }
   .feature__item::before {
     content: "";   
     height: 70px;
     width: 70px;
-    border: 1px solid green;
     border-radius: 50%;
     background-color: #27273e;
   }
@@ -319,7 +312,6 @@ body {
     line-height: 4.64;
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    background-color: #27da1e;
   }
   .feature__desc,
   .feature__items {
@@ -332,8 +324,7 @@ body {
     letter-spacing: normal;
     color: #221f1f;
     list-style: disc;  
-    margin-top: -11px;
-    background-color: blueviolet;  
+    margin-top: -11px;   
   }
   .feature__items{
     align-self: stretch;
@@ -347,15 +338,11 @@ body {
   }
 /* Разден Последние новости */
 
-  .latest-news {
-    background-color: burlywood;
-  }
   .latest-news .section-title{
-    margin-top: 68px;
-    
+    margin-top: 68px;    
   }
   .news {
-    margin-top: 70px;
+    margin-top: 74px;
   }
   .news__item {
     position: relative;
@@ -367,16 +354,13 @@ body {
     font-style: normal;
     line-height: 1.67;
     text-align: left;
-    color: #221f1f;   
-    background-color: rgb(50, 130, 204);
-    
+    color: #221f1f;       
   }
   .news__desc {
     display: flex;
     flex-direction: column;
     max-width: 689px;
     max-height: 166px;
-    background-color: darkorchid;
     margin-left: 135px;
     margin-bottom: 55px;
   }
@@ -394,7 +378,6 @@ body {
     line-height: 1.17;
     margin: 0;
     padding: 0;
-    background-color: rgb(91, 50, 204); 
   }
   .news__text {
     margin: 0;
@@ -436,7 +419,6 @@ body {
   .pagination {
     display: flex;  
     justify-content: flex-start;
-    background-color: #09c6ff;
     height: 30px;
     
     margin-top: 19px;
@@ -507,12 +489,13 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    min-height: 77px;
+    height: 77px;
      
   }
   .authorship {
     width: 265px;
     max-height: 48px;
+    margin-bottom: 5px;
     margin-left: 19px;
   }
   .authorship p {
@@ -567,19 +550,21 @@ body {
   }
   .social-network__item {
     position: relative;
-    
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d4d4d8;
     
   }
   .social-network__list li:nth-child(1) a::before {
     content: "";
     position: absolute;
     background-image: url(/img/vk.png);
-    background-repeat: no-repeat;
-    background-position: center;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
-    background-color: #27273e;
+    background-repeat: no-repeat;
+    background-position: center;
+    
   }
   .social-network__list li:nth-child(2) a::before {
     content: "";
@@ -590,7 +575,6 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #27273e;
   }
   .social-network__list li:nth-child(3) a::before {
     content: "";
@@ -601,7 +585,6 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #27273e;
   }
   .social-network__list li:nth-child(4) a::before {
     content: "";
@@ -612,7 +595,6 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #27273e;
   }
   .social-network__list li:nth-child(5) a::before {
     content: "";
@@ -623,7 +605,12 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #27273e;
+  }
+  .social-network__item:hover{
+    background-color: #ec1e79;
+    -webkit-transition: 1s all;
+    -o-transition: 1s all;
+    transition: 1s all;
   }
   
   
