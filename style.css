@@ -115,7 +115,8 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: stretch;
+    justify-content: flex-start;
+    align-items: flex-end;
     margin-right:  20px;
     margin-top: 15px; 
     height: 51px;    
@@ -140,13 +141,38 @@ body {
     font-stretch: normal;
     letter-spacing: normal;
     color: #ec1e79;
-    text-align: right;
-    
+    text-align: right;  
+    margin: 0;
+    padding: 0;  
+  }
+  .contacts__schedule:hover{
+    color: #5dd1f8;
   }
   .contacts__opening-hours {
-    visibility: hidden;
-    border: 1px solid red;
-    z-index: 2;
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;    
+    align-items: flex-start;
+    list-style: none;
+    z-index: -1;    
+    background-image: url(/img/Rounded\ Rectangle\ 2.png);
+    background-repeat: no-repeat;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    color: black;
+    width: 162px;
+    min-height: 80px;
+    margin: 0;   
+    padding-left: 10px;
+  }
+  .contacts__schedule:hover + .contacts__opening-hours {
+   z-index: 2;
+  }
+  .contacts__days {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: #ec1e79;
   }
   .header-banner {
     min-width: 1100px;
@@ -169,8 +195,7 @@ body {
   /* Боковое меню */
   .menu {    
     height: 100%;
-    width: 198px;  
-    background-color: rgba(127, 255, 212, 0.609);  
+    width: 198px;   
 }
   .menu__list {
     display: flex;
@@ -179,7 +204,6 @@ body {
     list-style: none; 
     margin-top: 10px;
     padding: 0;  
-    background-color: darkgreen;
   }
   
   .menu__list a {
@@ -594,8 +618,9 @@ body {
     -o-transition: 1s all;
     transition: 1s all;
   }
-  
-  
+  .social-network__list li:last-child {
+    margin-right: 0;
+  }  
   
   
   
