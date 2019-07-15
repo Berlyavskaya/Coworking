@@ -97,9 +97,7 @@ body {
   /*Хедер*/
   .header {
     position: relative;
-    justify-content: space-between;
-    
-    
+    justify-content: space-between;    
   }
   .logo {
     max-width: 99px;
@@ -447,8 +445,7 @@ body {
   }
   .page__item {  
     display: flex;
-    justify-content: center;
-  
+    justify-content: center;  
   }
 
   .page a{
@@ -490,8 +487,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    height: 77px;
-     
+    height: 77px;     
   }
   .authorship {
     width: 265px;
@@ -522,7 +518,6 @@ body {
     right: 503px;
     margin: 0;
     padding: 0;
-
   }
   .social-network {    
     min-height: 48px;
@@ -546,16 +541,14 @@ body {
     display: flex;
     width: 20px;
     height: 20px;
-    margin-right: 10px;
-    
+    margin-right: 10px;    
   }
   .social-network__item {
     position: relative;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #d4d4d8;
-    
+    background-color: #d4d4d8;    
   }
   .social-network__list li:nth-child(1) a::before {
     content: "";
@@ -564,8 +557,7 @@ body {
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
-    background-position: center;
-    
+    background-position: center;    
   }
   .social-network__list li:nth-child(2) a::before {
     content: "";
