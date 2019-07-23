@@ -1,0 +1,105 @@
+
+  /* Раздел Особенности */
+    .features .section-title {
+    margin-bottom: 35px;
+  } 
+  .features, .reviews {
+    display: flex;
+    align-items: flex-start;
+    max-width: 865px;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  .features__list {
+    display: flex;
+    list-style: none;
+    margin-left: 22px;
+    margin-bottom: 0;
+  }
+ 
+  .feature__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+  .feature__item::before {
+    content: "";   
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #27273e;
+  }
+  .feature__item:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    background-image: url(/img/flower.png);
+    background-repeat: no-repeat;
+    top: 20px;
+    height: 31px;
+    width: 27px;    
+  }
+  .feature__item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    background-image: url(/img/mark-as-favorite-star.png);
+    background-repeat: no-repeat;
+    top: 20px;
+    height: 32px;
+    width: 32px; 
+  }   
+  .feature__item:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    background-image: url(/img/painter-palette.png);
+    background-repeat: no-repeat;
+    top: 20px;
+    height: 29px;
+    width: 28px; 
+  } 
+  .feature__desc {
+    width: 205px;
+    text-align: center; 
+    margin-bottom: 18px; 
+  }
+  .feature__item:nth-child(1) {
+    margin-right: 64px;
+  }
+  .feature__item:nth-child(2) {
+    margin-right: 62px;
+  }
+  .feature__item:nth-child(1) {
+    margin-left: -40px;
+  }
+  .feature__title {
+    font-family: 'Gotham Pro';
+    font-size: 11px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 4.64;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+  }
+  .feature__desc,
+  .feature__items {
+    font-family: 'Gotham Pro';
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    color: #221f1f;
+    list-style: disc;  
+    margin-top: -11px;   
+  }
+  .feature__items{
+    align-self: stretch;
+    line-height: 1.9; 
+    text-align: left;
+    padding-left: 20px;
+  }
+  .feature__items li{
+    text-indent: 18px;
+  }

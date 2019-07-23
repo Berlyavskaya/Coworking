@@ -1,0 +1,53 @@
+/* Страница комментов */
+
+  .menu-comments {
+    margin-right: 0px;
+  }
+  .reviews .section-title {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .reviews {
+    max-width: 870px;
+    margin-bottom: 41px;
+  }
+  /* .reviews__item {
+    margin-bottom: 53px;
+  } */
+  .reviews__avatar{
+    position: relative;
+    background-color:  #f5f5f5;  
+  }
+  .no-avatar::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 45px;
+    right: 30px;
+    width: 99px;
+    height: 51px;
+    filter: grayscale(1);
+    opacity: 0.3;
+  }
+  .reviews__desc {
+    max-height: 253px;
+    overflow: hidden;    
+  }
+  /* .reviews__item:nth-child(4) .reviews__desc {
+    margin-bottom: 35px;
+  } */
+  .reviews__text{
+    max-width: 695px;
+    font-family: 'Gotham Pro';
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 30px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #221f1f;
+    letter-spacing: normal;
+  }

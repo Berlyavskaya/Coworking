@@ -1,0 +1,29 @@
+  .discount {
+    width: 1043px;
+    height: 174px;
+    display: flex;
+    align-items: center;
+  }
+  .discount__offer {
+    width: 621px;
+    height: 77px;
+    font-family: 'Gotham Pro';
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 202px;
+    padding-bottom: 20px;
+    
+  }
+  .discount__offer__link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ec1e79;
+    margin: 0;
+    padding: 0;
+  }

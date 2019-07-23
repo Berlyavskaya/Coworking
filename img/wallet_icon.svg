@@ -5,5 +5,6 @@
 	<style>
 		tspan { white-space:pre }
 	</style>
+	<path class="wallet"></path>
 	<use id="wallet_icon" href="#img1" transform="matrix(0.09,0,0,0.084,0,0)"/>
 </svg>

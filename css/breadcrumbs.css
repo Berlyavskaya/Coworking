@@ -1,0 +1,30 @@
+  .breadcrumbs {
+    display: flex;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 18px;
+    list-style: none;
+    font-style: italic;
+    font-family: 'Gotham Pro';
+    color: rgba(34, 31, 31, 0.8);
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .breadcrumbs a {
+    text-decoration: none;
+  }
+  .breadcrumbs-item:last-child {  
+    margin-left: 10px;
+  }
+  .breadcrumbs-item:first-child a {
+    color: rgba(236, 30, 121, 0.8);
+    text-decoration: underline;
+  }
+  .breadcrumbs-item:last-child::before{
+    content: '/';
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    left: 60px;
+  }

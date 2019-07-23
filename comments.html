@@ -4,8 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Comments</title>
+    <!--Стили для всех страниц  -->
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/containers,wrappers.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/contacts.css">
+    <link rel="stylesheet" href="/css/breadcrumbs.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/section-title.css">
+    <link rel="stylesheet" href="/css/pagination.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/authorship.css">
+    <link rel="stylesheet" href="/css/social-network.css">
+    <!-- Стили для страницы Отзывов-->
+    <link rel="stylesheet" href="/css/css_comments/comments.css">
+    <link rel="stylesheet" href="/css/css_index/section_latest-news.css">
+    <link rel="stylesheet" href="/css/css_comments/discount.css">
+    <link rel="stylesheet" href="/css/css_comments/form.css">
   </head>
   <body>
     <div class="wrapper">
@@ -30,9 +46,12 @@
         <main class="main-content main-content__comments">
           <nav class="menu menu-comments">
             <ul class="menu__list">
-              <li class="menu__item"><a href="/index.html" class="menu__list-main">Главная</a></li>
-              <li class="menu__item"><a href="/comments.html" class="menu__list-comments">Отзывы</a></li>
-              <li class="menu__item"><a href="/prices.html" class="menu__list-prices">Тарифы</a></li>
+              <li class="menu__item">
+                <a href="/index.html" class="menu__list-main">Главная</a></li>
+              <li class="menu__item">
+                <a href="/comments.html" class="menu__list-comments">Отзывы</a></li>
+              <li class="menu__item">
+                <a href="/prices.html" class="menu__list-prices">Тарифы</a></li>
             </ul>
           </nav>
           <div class="wrapper-section"> 
@@ -77,7 +96,7 @@
                 </li>
               </ul>              
             </section>
-            <nav class="pagination">
+            <nav class="pagination pagination-comments">
                 <p> Страница <span id="activ-page">1</span> из <span id="last-page">7</span></p>
                 <ul class="page">
                   <li class="page__item">
@@ -109,34 +128,42 @@
             <p class="discount__offer">Для наших новых клиентов мы предлагаем <a href="index.html" class="discount__offer__link">скидку 50%</a> на первый день! Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</p>
           </article>
         </div>  
-      <div class="container-feedback">
+      <section class="container-feedback">
         <div class="form-wrapper">
           <h3 class="section-title">Оставить отзыв</h3>        
-          <form class="form">            
-            <div class="form-group"> 
-              <label for="name" class="form-group__label">Ваше имя</label>
-              <input type="text" class="form-group_input" id="name"  placeholder="Андрей">
+          <form class="form">
+            <div class="form__row">
+              <div class="form-group"> 
+                <label for="name" class="form-group__label">Ваше имя</label>
+                <input type="text" class="form-group__input" id="name"  placeholder="Андрей">
+              </div>
+              <div class="form-group"> 
+                <label for="email" class="form-group__label">Ссылка на профиль VK</label>
+                <input type="text" class="form-group__input" id="email"  placeholder="vk.com/example">
+              </div>
             </div>
-            <div class="form-group"> 
-              <label for="email" class="form-group__label">Ссылка на профиль VK</label>
-              <input type="text" class="form-group_input" id="email"  placeholder="vk.com/example">
+            
+            <div class="form__row">            
+              <div class="form-group"> 
+                <label for="feedback" class="form-group__label">Текст отзыва</label>
+                <textarea class="form-group__textarea" id="feedback" placeholder="Мне понравилось"></textarea>
+              </div>
             </div>
-            <div class="form-group"> 
-              <label for="feedback" class="form-group__label">Текст отзыва</label>
-              <textarea class="form-group_textarea" id="feedback" rows="5" placeholder="Мне понравилось"></textarea>
+            <div class="form__row">
+              <div class="form-group">
+                <div class="form-group__foto">
+                  <p class="form-group__label"> Отображать фото в отзыве?</p>               
+                  <input type="radio" class="form-group_radio" name="optionsRadios" id="foto-yes">
+                  <label class="form-group__label-answer" for="foto-yes">Да</label>                
+                  <input type="radio" class="form-group_radio" name="optionsRadios" id="foto-no">
+                  <label class="form-group__label-answer" for="foto-no">Нет</label>
+                </div>
+              </div>
+              <button type="submit" class="form_button">Отправить</button>
             </div>
-            <div class="form-group">
-              <label class="form-group__label"> Отображать фото в отзыве?                
-                <input type="radio" class="form-group_radio" name="optionsRadios" id="foto-yes">
-                <label class="form-group__label-answer" for="foto-yes">Да</label>                
-                <input type="radio" class="form-group_radio" name="optionsRadios" id="foto-no">
-                <label class="form-group__label-answer" for="foto-no">Нет</label>
-              </label>                
-            </div>
-            <button type="submit" class="form_button">Отправить</button>
           </form>
         </div>
-        </div>    
+      </section>    
       <div class="container-footer">
           <footer class="footer">        
               <div class="authorship">

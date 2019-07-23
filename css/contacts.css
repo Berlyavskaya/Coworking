@@ -1,0 +1,89 @@
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-right:  20px;
+    margin-top: 15px; 
+    height: 51px;    
+  }  
+  .contacts__phone {
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    font-stretch: normal;
+    letter-spacing: normal;    
+    color: #ffffff;    
+  }
+  .contacts__schedule {
+    margin-right: 4px;
+    margin-top: 2px;
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: 0.7;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #ec1e79;
+    text-align: right;  
+    margin: 0;
+    padding: 0; 
+    margin-bottom: 20px; 
+  }
+  .contacts__schedule:hover{
+    color: #5dd1f8;
+  }
+  .contacts__opening-hours {
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;    
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: relative;
+    list-style: none;
+    opacity: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(23, 59, 117, 0.55);
+    border-radius: 3px;
+    font-size: 14px;
+    color: black;
+    width: 162px;
+    min-height: 68px;
+    margin: 0;   
+    padding-left: 10px;
+    cursor: pointer;
+    transition: all 1s;
+  }
+  .contacts__opening-hours::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 25px;
+    top: -25px;
+    right: 0;
+    left: 0;
+  }
+  .contacts__opening-hours::after {
+    content: '';
+    position: absolute;
+    border-left: 12px solid transparent;
+	  border-right: 12px solid transparent;
+	  border-bottom: 12px solid white;    
+    border-radius: 3px;
+    display: block;
+    width: 0;
+    height: 0;
+    top: -10px;
+    right: -1px;
+  }
+  .contacts__schedule:hover + .contacts__opening-hours {
+    opacity: 0.9;
+  }
+  .contacts__days {
+    margin-bottom: 10px;
+    color: #ec1e79;
+    font-weight: bold;

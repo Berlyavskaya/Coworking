@@ -1,0 +1,142 @@
+
+  /* Тарифы */
+  .wrapper-section-prices {
+    margin-bottom: 30px;
+  }
+  .breadcrumbs-prices {
+    margin: 0;
+    margin-bottom: 18px;
+  }
+  .prices .section-title {
+    padding: 0; 
+    margin-bottom: 40px;
+  }
+  .prices {
+    width: 860px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .prices__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham Pro';
+  }
+  .prices__item {
+    display: flex;
+    flex-direction: column;
+    width: 250px;    
+    margin-bottom: 48px;
+  }
+  .prices__picture {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 153px;
+    overflow: hidden;
+  }
+  .prices__item:nth-child(1) .prices__picture::before {
+    content: '';
+    position: absolute;
+    background-image: url(/img/prices/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 250px;
+    height: 153px;
+  }
+  .prices__item:nth-child(2) .prices__picture::before {
+    content: '';
+    position: absolute;
+    background-image: url(/img/prices/2.jpg);
+    background-repeat: no-repeat;
+    background-position: center 62%;
+    background-size: 250%;
+    width: 100%;
+    height: 100%;
+  }
+  .prices__item:nth-child(3) .prices__picture::before {
+    content: '';
+    position: absolute;
+    background-image: url(/img/prices/3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 250px;
+    height: 153px;
+  }
+  .prices__item:nth-child(4) .prices__picture::before {
+    content: '';
+    position: absolute;
+    background-image: url(/img/prices/4.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 250px;
+    height: 153px;
+  }
+  .prices__item:nth-child(5) .prices__picture::before {
+    content: '';
+    position: absolute;
+    background-image: url(/img/prices/5.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 250px;
+    height: 153px;
+  }
+  .prices__item:nth-child(6) .prices__picture::before {
+    content: '';
+    position: absolute;
+    background-image: url(/img/prices/6.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 250px;
+    height: 153px;
+  }
+  .prices__picture::after{
+    content: '';
+    position: absolute;
+    background-color: #27273e;
+    opacity: 0.85;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  .prices-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 250px;
+    height: 153px;
+    margin: 0;         
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 34px;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5dd1f8;
+    z-index:3 ;    
+  }
+  .prices__desc-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 7px;
+  }
+  .prices__text {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #221f1f;
+    margin: 0;
+  }

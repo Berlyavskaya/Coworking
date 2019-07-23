@@ -1,0 +1,70 @@
+  body {
+    margin: 0;
+  }
+  .wrapper {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: left;    
+  }
+  .container-header, 
+  .container-main, 
+  .container-footer, 
+  .container-article, 
+  .container-feedback {
+    min-width: 1100px;
+    display: flex;
+    justify-content: center;
+   }
+  .container-feedback {
+    max-height: 426px;
+    margin-bottom: 47px;
+  }
+  .container-article {
+    margin-bottom: 60px;
+  }
+  .container-header, 
+  .container-footer,
+  .container-article {
+    background-color: #27273e;
+    font-family: 'Gotham Pro', Arial, sans-serif;
+    color: #ffffff;    
+  }
+  .header, .main-content, .footer, .discount, .form {
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-header {
+    max-height: 436px; 
+    min-height: 77px;
+    margin-bottom: 45px;     
+  }
+  .main-content {
+    flex-direction: row;  
+    margin-bottom: 61px;
+    max-width: 1100px;
+    flex-wrap: nowrap; 
+  }
+  .main-content__comments {
+    margin-bottom: 49px;
+  }
+  .container-header__comments {
+    margin-bottom: 40px;
+  }
+  .container-header__index {
+    margin-bottom: 60px;
+  }
+
+  /*Основной контент*/
+  /* Прячем звголовок и подсказки скринридера */
+  h1, .page__sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }

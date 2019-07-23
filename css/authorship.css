@@ -1,0 +1,25 @@
+ 
+  .authorship {
+    width: 265px;
+    max-height: 48px;
+    margin-bottom: 5px;
+    margin-left: 19px;
+  }
+  .authorship p {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+  .authorship a,
+  .authorship span {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+  }

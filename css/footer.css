@@ -1,0 +1,18 @@
+  /* Футер */
+  .footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 77px;     
+  }
+  .footer .logo {
+    position: absolute;
+    right: 503px;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  
