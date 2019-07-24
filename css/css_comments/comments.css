@@ -11,9 +11,20 @@
     max-width: 870px;
     margin-bottom: 41px;
   }
-  /* .reviews__item {
-    margin-bottom: 53px;
-  } */
+  .reviews__item {
+    position: relative;
+  }
+  .reviews__item {
+    margin-bottom: 54px;
+  }
+  .reviews__item::after {
+    content: '';
+    position: absolute;
+    background-color: #f5f5f5;
+    width: 880px;
+    height: 2px;
+    bottom: -27px;
+  }
   .reviews__avatar{
     position: relative;
     background-color:  #f5f5f5;  
@@ -33,14 +44,15 @@
   }
   .reviews__desc {
     max-height: 253px;
-    overflow: hidden;    
+    overflow: hidden;
+    font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;    
   }
-  /* .reviews__item:nth-child(4) .reviews__desc {
-    margin-bottom: 35px;
-  } */
+  .reviews__date {
+    font-weight: 300;
+    font-family: inherit;
+  }
   .reviews__text{
-    max-width: 695px;
-    font-family: 'Gotham Pro';
+    max-width: 695px;    
     font-size: 18px;
     font-weight: 300;
     font-style: normal;

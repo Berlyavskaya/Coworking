@@ -1,17 +1,17 @@
   /* Футер */
   .footer {
+    box-sizing: border-box;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    height: 77px;     
+    height: 77px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .footer .logo {
-    position: absolute;
-    right: 503px;
-    margin: 0;
-    padding: 0;
+  .footer .logo {    
+    margin-right: 100px;
   }
 
   

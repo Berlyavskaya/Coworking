@@ -1,10 +1,11 @@
   .discount {
+    position: relative;
     width: 1043px;
     height: 174px;
     display: flex;
     align-items: center;
   }
-  .discount__offer {
+  .discount__offer {    
     width: 621px;
     height: 77px;
     font-family: 'Gotham Pro';
@@ -17,8 +18,15 @@
     text-align: left;
     color: #ffffff;
     margin-left: 202px;
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px;    
+  }
+  .discount::before{
+    content: '';
+    position: absolute;
+    background-image: url(/img/pattern.png);
+    background-repeat: no-repeat;
+    width: 1043px;
+    height: 174px;
   }
   .discount__offer__link {
     text-decoration: none;

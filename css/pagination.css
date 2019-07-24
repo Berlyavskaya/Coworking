@@ -5,7 +5,7 @@
     display: flex;  
     justify-content: center;
     align-items: baseline;
-   
+    font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
   }
   .pagination-index {
 
@@ -14,7 +14,7 @@
     width: 87%;
   }
   .pagination p {
-    font-family: 'Roboto Lt', Arial, Helvetica, sans-serif;
+    
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -60,11 +60,13 @@
   } 
   .page li:nth-child(1) a,
   .page li:nth-child(9) a {
-    width: 15px;
+    width: 20px;
   }
-  .page__previous, .page__next {
-    font-size: 24px;
-    line-height: 0;    
+  .page__previous, 
+  .page__next {
+    font-size: 30px;
+    line-height: 0;
+    line-height: 24px;    
   }
   .page__previous {    
     opacity: 0.3;
