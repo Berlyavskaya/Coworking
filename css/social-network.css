@@ -32,18 +32,18 @@
   .social-network__list li:nth-child(1) a::before {
     content: "";
     position: absolute;
-    background-image: url(/img/vk.png);
+    background-image: url(/img/spritesheet-social-network.png);
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
-    background-position: center;    
+    background-position: -85px 2px;   
   }
   .social-network__list li:nth-child(2) a::before {
     content: "";
     position: absolute;
-    background-image: url(/img/fb.png);
+    background-image: url(/img/spritesheet-social-network.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 2px -1px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -51,9 +51,9 @@
   .social-network__list li:nth-child(3) a::before {
     content: "";
     position: absolute;
-    background-image: url(/img/google.png);
+    background-image: url(/img/spritesheet-social-network.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -18px 1px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -61,9 +61,9 @@
   .social-network__list li:nth-child(4) a::before {
     content: "";
     position: absolute;
-    background-image: url(/img/twitter.png);
+    background-image: url(/img/spritesheet-social-network.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -63px 1px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -71,9 +71,9 @@
   .social-network__list li:nth-child(5) a::before {
     content: "";
     position: absolute;
-    background-image: url(/img/mail.png);
+    background-image: url(/img/spritesheet-social-network.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -42px 1px;
     width: 20px;
     height: 20px;
     border-radius: 50%;

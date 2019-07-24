@@ -42,12 +42,12 @@
   }
   .main-content {
     flex-direction: row;  
-    margin-bottom: 60px;
+    margin-bottom: 69px;
     max-width: 1100px;
     flex-wrap: nowrap; 
   }
   .main-content__comments {
-    margin-bottom: 49px;
+    margin-bottom: 57px;
   }
   .container-header__comments {
     margin-bottom: 40px;

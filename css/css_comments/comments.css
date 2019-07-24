@@ -9,7 +9,7 @@
   }
   .reviews {
     max-width: 870px;
-    margin-bottom: 41px;
+    margin-bottom: 49px;
   }
   .reviews__item {
     position: relative;
@@ -24,6 +24,10 @@
     width: 880px;
     height: 2px;
     bottom: -27px;
+  }
+  .reviews__item:last-child::after {
+    width: 0;
+    height: 0;
   }
   .reviews__avatar{
     position: relative;

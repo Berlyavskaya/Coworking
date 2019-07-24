@@ -13,7 +13,7 @@
     padding-top: 5px;  
   }
    .menu__item {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     width: 100%;
   }
   .menu__item:last-child {
@@ -37,45 +37,57 @@
   .menu__list a:active {
     color: #ec1e79;
   }
+  .menu__list .menu__list-main__active,
+  .menu__list .menu__list-comments__active,
+  .menu__list .menu__list-prices__active {
+    color: #ec1e79;
+  }
+
   .menu__list-main::before {
     content: "";
     position: absolute;
-    background-image: url(/img/main_icon.svg);
-    background-repeat: no-repeat;
-    bottom: 2px;
+    background-image: url(/img/spritesheet-menu.png);
+    background-repeat: no-repeat;    
+    background-position: -5px -62px;
+    bottom: -2px;
     left: 5px;
     height: 16px;
     width: 17px;    
   }
   .menu__list-main:hover::before,
-  .menu__list-main:active::before {
-    background-image: url(/img/main_icon_pink.png);
+  .menu__list-main:active::before,
+  .menu__list-main__active::before {      
+    background-position: -5px -89px;
   }
   .menu__list-comments::before {
     content: "";
     position: absolute;
-    background-image: url(/img/feed_icon.svg);
-    background-repeat: no-repeat;
-    bottom: -2px;
+    background-image: url(/img/spritesheet-menu.png);
+    background-repeat: no-repeat;  
+    background-position: -5px -3px;
+    bottom: -3px;
     left: 5px;
     height: 20px;
     width: 20px;
   }
   .menu__list-comments:hover::before,
-  .menu__list-comments:active::before {
-    background-image: url(/img/feed_icon_pink.png);
+  .menu__list-comments:active::before,
+  .menu__list-comments__active::before {
+    background-position: -5px -31px;
   }
   .menu__list-prices::before {
     content: "";
     position: absolute;
-    background-image: url(/img/wallet_icon.svg);
-    background-repeat: no-repeat;    
+    background-image: url(/img/spritesheet-menu.png);
+    background-repeat: no-repeat;
+    background-position: -4px -115px;   
     bottom: -4px;
     left: 5px;
     height: 20px;
     width: 20px;
   }
   .menu__list-prices:hover::before,
-  .menu__list-prices:active::before {
-    background-image: url(/img/wallet_icon_pink.png);
+  .menu__list-prices:active::before,
+  .menu__list-prices__active::before {
+    background-position: -4px -142px;   
   }
