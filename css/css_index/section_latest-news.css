@@ -40,10 +40,11 @@
   .news__date, .reviews__date{
     font-size: 14px;
     font-family:'Roboto Lt', Arial, Helvetica, sans-serif;
-    line-height: 1.5;
+    line-height: normal;
     color: #656464;
     margin: 0;
     padding: 0;
+    margin-bottom: 5px;
   }
   .news__title, .reviews__title {
     font-weight: bold;

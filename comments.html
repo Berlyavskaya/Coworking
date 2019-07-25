@@ -32,21 +32,47 @@
       </div>    
       <div class="container-main">
         <main class="main-content main-content__comments">
-          <nav class="menu menu-comments">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="/index.html" class="menu__list-main ">Главная</a></li>
-              <li class="menu__item">
-                <a href="/comments.html" class="menu__list-comments menu__list-comments__active">Отзывы</a></li>
-              <li class="menu__item">
-                <a href="/prices.html" class="menu__list-prices " >Тарифы</a></li>
-            </ul>
-          </nav>
-          <div class="wrapper-section"> 
-              <ul class="breadcrumbs">
-                  <li class="breadcrumbs-item"><a href="/index.html">Главная</a></li>
-                  <li class="breadcrumbs-item active"><a href="/comments.html">Отзывы</a></li>
-                </ul>                       
+          <aside class="aside">
+            <article class="discount">
+              <p class="discount__offer">Для наших новых клиентов мы предлагаем <a href="index.html" class="discount__offer__link">скидку 50%</a> на первый день! Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</p>
+            </article>
+            <div class="social-network">
+                <h4 class="social-network__title">Наши социальные сети</h4>
+                <ul class="social-network__list">
+                  <li class="social-network__item">
+                    <a class="social-network__link" href="#" 
+                    aria-label="Аккаунт коворкинга Вконтакте"></a>
+                  </li>
+                  <li class="social-network__item">
+                    <a class="social-network__link" href="#" 
+                    aria-label="Аккаунт коворкинга в Facebook"></a>
+                  </li>
+                  <li class="social-network__item">
+                    <a class="social-network__link" href="#" 
+                    aria-label="Аккаунт коворкинга в Google"></a>
+                  </li>
+                  <li class="social-network__item">
+                    <a class="social-network__link" href="#" 
+                    aria-label="Аккаунт коворкинга в Twitter"></a>
+                  </li>
+                  <li class="social-network__item">
+                    <a class="social-network__link" href="#" 
+                    aria-label="Почта"></a>
+                  </li>
+                </ul>
+              </div>         
+          </aside>          
+          <div class="wrapper-section">
+              <nav class="menu menu-comments">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="/index.html" class="menu__list-main menu__list-main__white-bg">Главная</a></li>
+                  <li class="menu__item">
+                    <a href="/comments.html" class="menu__list-comments menu__list-comments__white-bg menu__list-comments__active">Отзывы</a></li>
+                  <li class="menu__item">
+                    <a href="/prices.html" class="menu__list-prices menu__list-prices__white-bg" >Тарифы</a></li>
+                </ul> 
+              </nav>              
             <section class="reviews">              
               <h2 class="section-title">Отзывы</h2>
               <ul class="reviews__list">
@@ -108,50 +134,46 @@
                   </li>
                 </ul>
               </nav>
+            <section class="feedback">
+                  
+                           
+                    <form class="form">
+                        <h3 class="section-title">Оставить отзыв</h3> 
+                      <div class="form__row">
+                        <div class="form-group"> 
+                          <label for="name" class="form-group__label">Ваше имя</label>
+                          <input type="text" class="form-group__input" id="name"  placeholder="Андрей">
+                        </div>
+                        <div class="form-group"> 
+                          <label for="email" class="form-group__label">Ссылка на профиль VK</label>
+                          <input type="text" class="form-group__input" id="email"  placeholder="vk.com/example">
+                        </div>
+                      </div>                      
+                      <div class="form__row">            
+                        <div class="form-group"> 
+                          <label for="feedback" class="form-group__label">Текст отзыва</label>
+                          <textarea class="form-group__textarea" id="feedback" placeholder="Мне понравилось"></textarea>
+                        </div>
+                      </div>
+                      <div class="form__row">
+                        <div class="form-group">
+                          <div class="form-group__foto">
+                            <p class="form-group__label"> Отображать фото в отзыве?</p>               
+                            <input type="radio" class="form-group_radio" name="optionsRadios" id="foto-yes">
+                            <label class="form-group__label-answer" for="foto-yes">Да</label>                
+                            <input type="radio" class="form-group_radio" name="optionsRadios" id="foto-no">
+                            <label class="form-group__label-answer" for="foto-no">Нет</label>
+                          </div>
+                        </div>
+                        <button type="submit" class="form_button">Отправить</button>
+                      </div>
+                    </form>
+                  
+            </section>    
           </div>
         </main>                        
       </div>  
-      <div class="container-article">
-          <article class="discount">
-            <p class="discount__offer">Для наших новых клиентов мы предлагаем <a href="index.html" class="discount__offer__link">скидку 50%</a> на первый день! Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</p>
-          </article>
-        </div>  
-      <section class="container-feedback">
-        <div class="form-wrapper">
-          <h3 class="section-title">Оставить отзыв</h3>        
-          <form class="form">
-            <div class="form__row">
-              <div class="form-group"> 
-                <label for="name" class="form-group__label">Ваше имя</label>
-                <input type="text" class="form-group__input" id="name"  placeholder="Андрей">
-              </div>
-              <div class="form-group"> 
-                <label for="email" class="form-group__label">Ссылка на профиль VK</label>
-                <input type="text" class="form-group__input" id="email"  placeholder="vk.com/example">
-              </div>
-            </div>
-            
-            <div class="form__row">            
-              <div class="form-group"> 
-                <label for="feedback" class="form-group__label">Текст отзыва</label>
-                <textarea class="form-group__textarea" id="feedback" placeholder="Мне понравилось"></textarea>
-              </div>
-            </div>
-            <div class="form__row">
-              <div class="form-group">
-                <div class="form-group__foto">
-                  <p class="form-group__label"> Отображать фото в отзыве?</p>               
-                  <input type="radio" class="form-group_radio" name="optionsRadios" id="foto-yes">
-                  <label class="form-group__label-answer" for="foto-yes">Да</label>                
-                  <input type="radio" class="form-group_radio" name="optionsRadios" id="foto-no">
-                  <label class="form-group__label-answer" for="foto-no">Нет</label>
-                </div>
-              </div>
-              <button type="submit" class="form_button">Отправить</button>
-            </div>
-          </form>
-        </div>
-      </section>    
+      
       <div class="container-footer">
           <footer class="footer">        
               <div class="authorship">
@@ -163,31 +185,7 @@
               <a class="logo" href="/index.html">
                 <img src="/img/logo.svg" class="logo__img" width="99px" height="51px" alt="Логотип. Коворкинг твоей мечты">
               </a>
-              <div class="social-network">
-                <h4 class="social-network__title">Наши социальные сети</h4>
-                <ul class="social-network__list">
-                  <li class="social-network__item">
-                    <a class="social-network__link" href="#" 
-                    aria-label="Аккаунт коворкинга Вконтакте"></a>
-                  </li>
-                  <li class="social-network__item">
-                    <a class="social-network__link" href="#" 
-                    aria-label="Аккаунт коворкинга в Facebook"></a>
-                  </li>
-                  <li class="social-network__item">
-                    <a class="social-network__link" href="#" 
-                    aria-label="Аккаунт коворкинга в Google"></a>
-                  </li>
-                  <li class="social-network__item">
-                    <a class="social-network__link" href="#" 
-                    aria-label="Аккаунт коворкинга в Twitter"></a>
-                  </li>
-                  <li class="social-network__item">
-                    <a class="social-network__link" href="#" 
-                    aria-label="Почта"></a>
-                  </li>
-                </ul>
-              </div>         
+              
           </footer>
       </div> 
     </div>

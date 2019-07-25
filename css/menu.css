@@ -1,25 +1,25 @@
 
   /* Боковое меню */
-  .menu {     
-    width: 198px;  
+  .menu { 
+    width: 43%;
+    margin-left: 30px;  
 }
   .menu__list {
     display: flex;    
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: flex-start;
     list-style: none; 
+    height: 36px;
     margin: 0;
     padding: 0;
-    padding-top: 5px;  
-  }
-   .menu__item {
-    margin-bottom: 36px;
-    width: 100%;
   }
   .menu__item:last-child {
     margin-bottom: 0;
   }
-  .menu__list a {
+  .menu__list-main,
+  .menu__list-comments,
+  .menu__list-prices {
     position: relative;
     display: block;
     text-decoration: none;
@@ -29,20 +29,19 @@
     font-weight: bold;
     letter-spacing: 1.2px;
     text-align: left;
-    color: #000000;
-    margin-left: 15px;
+    color: #ffffff;
     padding-left: 41px;    
   }
-  .menu__list a:hover,
-  .menu__list a:active {
+  /* Для главной страницы */
+  .menu__list-main__dark-bg:hover,
+  .menu__list-comments__dark-bg:hover,
+  .menu__list-prices__dark-bg:hover,
+  .menu__list-main__dark-bg:active,
+  .menu__list-comments__dark-bg:active,
+  .menu__list-prices__dark-bg:active,
+  .menu__list-main__active {
     color: #ec1e79;
   }
-  .menu__list .menu__list-main__active,
-  .menu__list .menu__list-comments__active,
-  .menu__list .menu__list-prices__active {
-    color: #ec1e79;
-  }
-
   .menu__list-main::before {
     content: "";
     position: absolute;
@@ -54,40 +53,79 @@
     height: 16px;
     width: 17px;    
   }
-  .menu__list-main:hover::before,
-  .menu__list-main:active::before,
+  .menu__list-main__dark-bg:hover::before,
+  .menu__list-main__dark-bg:active::before,
   .menu__list-main__active::before {      
-    background-position: -5px -89px;
-  }
+    background-position: -10px -123px;
+  }  
   .menu__list-comments::before {
     content: "";
     position: absolute;
     background-image: url(/img/spritesheet-menu.png);
     background-repeat: no-repeat;  
-    background-position: -5px -3px;
+    background-position: -5px -5px;
     bottom: -3px;
     left: 5px;
     height: 20px;
     width: 20px;
   }
-  .menu__list-comments:hover::before,
-  .menu__list-comments:active::before,
+  .menu__list-comments__dark-bg:hover::before,
+  .menu__list-comments__dark-bg:active::before,
   .menu__list-comments__active::before {
-    background-position: -5px -31px;
+    background-position: -9px -65px;
   }
   .menu__list-prices::before {
     content: "";
     position: absolute;
     background-image: url(/img/spritesheet-menu.png);
     background-repeat: no-repeat;
-    background-position: -4px -115px;   
+    background-position: -4px -205px;  
     bottom: -4px;
     left: 5px;
     height: 20px;
     width: 20px;
   }
-  .menu__list-prices:hover::before,
-  .menu__list-prices:active::before,
+  .menu__list-prices__dark-bg:hover::before,
+  .menu__list-prices__dark-bg:active::before,
   .menu__list-prices__active::before {
-    background-position: -4px -142px;   
+    background-position: -9px -173px;   
+  }
+  /* Для страниц Отзывов и Тарфиов */
+  .menu__list-prices__white-bg,
+  .menu__list-main__white-bg,
+  .menu__list-comments__white-bg {
+    color:#ec1e79;
+  }
+  .menu__list-prices__white-bg:hover,
+  .menu__list-main__white-bg:hover,
+  .menu__list-prices__white-bg:active,
+  .menu__list-main__white-bg:active,
+  .menu__list-comments__white-bg:hover,
+  .menu__list-comments__white-bg:active,
+  .menu__list-prices__active,
+  .menu__list-comments__active {
+    color: #221f1f;
+  }
+  .menu__list-prices__white-bg::before {
+    background-position: -10px -173px;
+  }
+  .menu__list-prices__white-bg:hover::before,
+  .menu__list-prices__white-bg:active::before,
+  .menu__list-prices__active::before {
+    background-position: -10px -147px;
+  }  
+  .menu__list-main__white-bg::before {
+    background-position: -10px -122px;
+  }
+  .menu__list-main__white-bg:hover::before,
+  .menu__list-main__white-bg:active::before {
+    background-position: -10px -95px;
+  }
+  .menu__list-comments__white-bg::before {
+    background-position: -10px -66px;
+  }
+  .menu__list-comments__white-bg:hover::before,
+  .menu__list-comments__white-bg:active::before,
+  .menu__list-comments__active::before{
+    background-position: -10px -37px;
   }
