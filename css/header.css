@@ -10,11 +10,11 @@
   }  
   .heder__index {
     padding-top: 15px;
-    overflow:hidden; 
+    overflow: hidden; 
   }
   .header-banner {
-    width: 100%;
-    min-height: 393px; 
+    min-width: 1200px;
+    min-height: 398px; 
     margin-left: -20px; 
     
   }

@@ -1,18 +1,13 @@
 
   /* Тарифы */
-  .wrapper-section-prices {
-    margin-bottom: 30px;
-  }
-  .breadcrumbs-prices {
-    margin: 0;
-    margin-bottom: 18px;
-  }
+
   .prices .section-title {
     padding: 0; 
-    margin-bottom: 40px;
+    margin-bottom: 42px;
+    line-height: 1;
   }
   .prices {
-    width: 860px;
+    width: 864px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -25,20 +20,26 @@
     margin: 0;
     padding: 0;
     font-family: 'Gotham Pro';
+    margin-bottom: -83px;
   }
   .prices__item {
     display: flex;
     flex-direction: column;
-    width: 250px;    
-    margin-bottom: 48px;
+    width: 273px;    
+    margin-bottom: 83px;
   }
+  /* .prices__item:nth-child(3+n) {
+    margin-bottom: 0;
+  } */
   .prices__picture {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 153px;
+    width: 273px;
+    height: 165px;
     overflow: hidden;
+    margin-bottom: 29px;
   }
   .prices__item:nth-child(1) .prices__picture::before {
     content: '';
@@ -46,15 +47,15 @@
     background-image: url(/img/prices/1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    width: 250px;
-    height: 153px;
+    width: 273px;
+    height: 165px;
   }
   .prices__item:nth-child(2) .prices__picture::before {
     content: '';
     position: absolute;
     background-image: url(/img/prices/2.jpg);
     background-repeat: no-repeat;
-    background-position: center 62%;
+    background-position: center 66%;
     background-size: 250%;
     width: 100%;
     height: 100%;
@@ -65,8 +66,8 @@
     background-image: url(/img/prices/3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    width: 250px;
-    height: 153px;
+    width: 273px;
+    height: 165px;
   }
   .prices__item:nth-child(4) .prices__picture::before {
     content: '';
@@ -74,8 +75,8 @@
     background-image: url(/img/prices/4.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    width: 250px;
-    height: 153px;
+    width: 273px;
+    height: 165px;
   }
   .prices__item:nth-child(5) .prices__picture::before {
     content: '';
@@ -83,8 +84,8 @@
     background-image: url(/img/prices/5.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    width: 250px;
-    height: 153px;
+    width: 273px;
+    height: 165px;
   }
   .prices__item:nth-child(6) .prices__picture::before {
     content: '';
@@ -92,8 +93,8 @@
     background-image: url(/img/prices/6.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    width: 250px;
-    height: 153px;
+    width: 273px;
+    height: 165px;
   }
   .prices__picture::after{
     content: '';
@@ -109,8 +110,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 250px;
-    height: 153px;
+    width: 100%;
+    height: 100%;
     margin: 0;         
     font-size: 24px;
     font-weight: bold;
@@ -123,10 +124,14 @@
     color: #5dd1f8;
     z-index:3 ;    
   }
+  .prices-title__vip {
+    color: #ec1e79;
+  }
   .prices__desc-title {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+    margin: 0;
     margin-bottom: 7px;
   }
   .prices__text {

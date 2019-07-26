@@ -39,15 +39,21 @@
   }
   .main-content {
     flex-direction: row;  
-    margin-bottom: 69px;
+    margin-bottom: 57px;
     max-width: 1200px;
     flex-wrap: nowrap; 
   }
   .main-content__comments {
     margin-bottom: 49px;
   }
+  .main-content__prices {
+    margin-bottom: 70px;
+  }
   .container-header__comments {
     margin-bottom: 46px;
+  }
+  .container-header__prices {
+    margin-bottom: 32px;
   }
   .container-header__index {
     margin-bottom: 60px;
@@ -59,7 +65,7 @@
     align-items: flex-start;
     align-content: flex-start;
     width: 23%;    
-    margin-right: 13px;
+    margin-right: 19px;
     margin-left: 20px;
   }
 

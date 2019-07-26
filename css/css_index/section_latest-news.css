@@ -3,14 +3,14 @@
  
   .latest-news .section-title{
     line-height: 0.78;
-    margin-bottom: 82px;  
+    margin-bottom: 79px;  
   }
   .news, .reviews__list {
     padding: 0; 
     margin: 0;
   }
   .news {
-    margin-bottom: 60px;
+    margin-bottom: 41px;
   }
   .news__item, .reviews__item {
     position: relative;
@@ -24,7 +24,7 @@
     line-height: 1.67;
     text-align: left;
     color: #221f1f; 
-    margin-bottom: 51px;      
+    margin-bottom: 48px;      
   }
   .news__item:last-child, 
   .reviews__item:last-child {

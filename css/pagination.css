@@ -7,8 +7,12 @@
     align-items: center;
     font-family: 'Gotham Pro', Arial, Helvetica, sans-serif;
   }
+  .pagination-index {
+    width: 83%;
+    margin-bottom: 0;
+  }
   .pagination-comments {
-    width: 87%;
+    width: 89%;
     margin-bottom: 60px;
   }
   .pagination p {    
