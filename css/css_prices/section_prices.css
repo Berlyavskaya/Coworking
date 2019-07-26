@@ -28,10 +28,7 @@
     width: 273px;    
     margin-bottom: 83px;
   }
-  /* .prices__item:nth-child(3+n) {
-    margin-bottom: 0;
-  } */
-  .prices__picture {
+   .prices__picture {
     position: relative;
     display: flex;
     align-items: center;
@@ -75,6 +72,7 @@
     background-image: url(/img/prices/4.jpg);
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: 100%;
     width: 273px;
     height: 165px;
   }

@@ -11,10 +11,10 @@
 @import url(/css/social-network.css);
 /* Стили для Главной страницы */
 @import url(/css/breadcrumbs.css);
-@import url(/css/css_index/section_features.css);
-@import url(/css/css_index/section_latest-news.css);
+@import url(/css/css_about/section_features.css);
+@import url(/css/css_about/section_latest-news.css);
 /* Стили для страницы Отзывов */
-@import url(/css/css_index/section_latest-news.css);
+@import url(/css/css_about/section_latest-news.css);
 @import url(/css/css_comments/comments.css);
 @import url(/css/css_comments/discount.css);
 @import url(/css/css_comments/form.css);
@@ -22,3 +22,5 @@
 @import url(/css/breadcrumbs.css);
 @import url(/css/css_prices/section_prices.css);
 @import url(/css/css_prices/section_partners.css);
+/* Стиль для страницы приветствия */
+@import url(/css/welcome.css);

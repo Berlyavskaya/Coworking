@@ -1,13 +1,8 @@
-  body {
-    margin: 0;
-  }
-  .wrapper {
+    .wrapper {
     margin: 0 auto;
     padding: 0;
     font-family: 'Roboto', Arial, sans-serif;
     text-align: left; 
-    min-width: 1200px;
-    overflow: hidden;   
   }
   .container-header, 
   .container-main, 
@@ -55,7 +50,7 @@
   .container-header__prices {
     margin-bottom: 32px;
   }
-  .container-header__index {
+  .container-header__about {
     margin-bottom: 60px;
   }
   aside {

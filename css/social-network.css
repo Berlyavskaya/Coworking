@@ -87,7 +87,7 @@
     background-color: #ec1e79;
     -webkit-transition: 1s all;
     -o-transition: 1s all;
-    transition: 1s all;
+    transition: .3s all;
   }
   .social-network__list li:last-child {
     margin-right: 0;
