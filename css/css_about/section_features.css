@@ -1,15 +1,7 @@
 
   /* Раздел Особенности */
-    
-  .reviews {
-    display: flex;
-    align-items: flex-start;
-    max-width: 865px;
-    flex-direction: column;
-    margin-bottom: 80px;
-  }
- 
-  .feature__item {
+     
+  .feature {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -21,8 +13,7 @@
     padding-top: 29px;
     padding-bottom: 22px;
     margin-bottom: 25px;
-   }
-  
+   }  
   .feature__desc {
     width: 205px;
     text-align: center; 

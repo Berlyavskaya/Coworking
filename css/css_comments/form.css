@@ -136,7 +136,7 @@
     background-image: linear-gradient(to top, #ededed, #ffffff);
     border-radius: 50%;
   }
-  .form-group_radio + .form-group__label-answer::after{
+  .form-group_radio + .form-group__label-answer::after {
     content: "";
     position: absolute;
     left: 6px;
@@ -151,7 +151,10 @@
     opacity: 0;
 }
   input[type="radio"]:checked + label::before {
-    border: 1px solid #ec1e79;
+    border: 1px solid #ec1e79;    
+  }
+  input[type="radio"]:checked + .form-group__label-answer {
+    color: #ec1e79;
   }
   input[type="radio"]:checked + label::after {
     opacity: 1;

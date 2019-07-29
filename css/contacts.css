@@ -69,16 +69,18 @@
     width: 0;
     height: 0;
     top: -10px;
-    right: -1px;
+    right: -0.5px;
   }
   .dropdown {
     position: relative;
+    overflow: visible;
   }
   .dropdown__blok {
     position: absolute;
     opacity: 0.2;
     right: -999999%;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
+    overflow: visible;
   }
   .dropdown__blok::before {
     content: '';
