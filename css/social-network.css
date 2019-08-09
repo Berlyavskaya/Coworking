@@ -84,7 +84,8 @@
     border-radius: 50%;
   }
   .social-network__item:hover{
-    background-color: #ec1e79;
+    background: radial-gradient(70% 70%, white, #ec1e79);
+    
     -webkit-transition: 1s all;
     -o-transition: 1s all;
     transition: .3s all;
